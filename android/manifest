@@ -6,9 +6,9 @@ version: 1.0.0
 apiversion: 2
 architectures: armeabi armeabi-v7a x86
 description: tiwit
-author: Your Name
-license: Specify your license
-copyright: Copyright (c) 2016 by Your Company
+author: Louis Quaintance
+license: MIT
+copyright: Louis Quaintance APS
 
 # these should not be edited
 name: tiwit
