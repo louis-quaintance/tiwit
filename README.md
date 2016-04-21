@@ -30,17 +30,26 @@ require("com.tiwit").stopListening();
 
 ###Events
 
-witActivityDetectorStarted -- indicates Wit is starting to try and detect voice
-witSuccess -- indicates Wit API has responded, event object will contain message it has interpreted it as
-witFailedToRespondCorrectly -- indicates Wit API has failed to respond, event object will contain message with error message in it
-witDidStartListening -- indicates Wit started listening
+witActivityDetectorStarted -- indicates Wit is starting to try and detect voice<br/>
+witSuccess -- indicates Wit API has responded, event object will contain message it has interpreted it as<br/>
+witFailedToRespondCorrectly -- indicates Wit API has failed to respond, event object will contain message with error message in it<br/>
+witDidStartListening -- indicates Wit started listening<br/>
 
-e.g.
+e.g.<br/>
 
 ```
-require("com.tiwit").addEventListener("witSuccess", function(e){
-		alert("Wit understood what you said to be: " + e.message);
-});
+
+var initialized = require("com.tiwit").initialize("accessToken");
+
+if (initialized){
+	require("com.tiwit").addEventListener("witSuccess", function(e){
+			alert("Wit understood what you said to be: " + e.message);
+	});
+
+	require("com.tiwit").addEventListener("witFailedToRespondCorrectly", function(e){
+			alert("Wit is not available right now, please try again");
+	});
+}
 ```
 
 ###UI
