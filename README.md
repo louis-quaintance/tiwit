@@ -1,4 +1,4 @@
-# Napp Drawer Module [![gitTio](http://gitt.io/badge.svg)](http://gitt.io/component/com.tiwit)
+# Titanium Wit ai module [![gitTio](http://gitt.io/badge.svg)](http://gitt.io/component/com.tiwit)
 
 ###Wit.ai
 
