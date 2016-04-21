@@ -42,6 +42,7 @@ e.g.<br/>
 var initialized = require("com.tiwit").initialize("accessToken");
 
 if (initialized){
+	
 	require("com.tiwit").addEventListener("witSuccess", function(e){
 			alert("Wit understood what you said to be: " + e.message);
 	});
@@ -49,6 +50,13 @@ if (initialized){
 	require("com.tiwit").addEventListener("witFailedToRespondCorrectly", function(e){
 			alert("Wit is not available right now, please try again");
 	});
+
+	require("com.tiwit").startListening();
+
+} else {
+
+	console.log("Failed to initialize check adb logs")
+
 }
 ```
 
