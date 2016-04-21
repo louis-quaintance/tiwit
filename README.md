@@ -1,3 +1,5 @@
+# Napp Drawer Module [![gitTio](http://gitt.io/badge.svg)](http://gitt.io/component/com.tiwit)
+
 ###Wit.ai
 
 Wit.ai provides a really nice voice api, see: https://wit.ai
@@ -42,7 +44,7 @@ e.g.<br/>
 var initialized = require("com.tiwit").initialize("accessToken");
 
 if (initialized){
-	
+
 	require("com.tiwit").addEventListener("witSuccess", function(e){
 			alert("Wit understood what you said to be: " + e.message);
 	});
@@ -60,6 +62,19 @@ if (initialized){
 }
 ```
 
+### Get it
+
+Download the latest distribution ZIP-file and consult the [Titanium Documentation](http://docs.appcelerator.com/titanium/latest/#!/guide/Using_a_Module) on how install it
+
+Or simply use the [gitTio CLI](http://gitt.io/cli) [![gitTio](http://gitt.io/badge.svg)](http://gitt.io/component/com.tiwit)
+
+`$ gittio install com.tiwit`
+
 ###UI
 
 You'll need to add your own voice button and loading indicator while it processes your voice, it detects when you start and stop talking
+
+## Author
+
+**Louis Quaintance**  
+email: louisandkatherine10@gmail.com
