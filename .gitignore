@@ -1,3 +1,5 @@
 android/build
 android/.classpath
 android/.project
+bin
+.settings
