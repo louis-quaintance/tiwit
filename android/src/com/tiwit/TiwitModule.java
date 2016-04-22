@@ -43,6 +43,7 @@ public class TiwitModule extends KrollModule implements IWitListener {
             wit.enableContextLocation(TiApplication.getInstance().getBaseContext());
             return true;
         } catch (Throwable e) {
+            e.printStackTrace();
             return false;
         }
     }
@@ -53,6 +54,7 @@ public class TiwitModule extends KrollModule implements IWitListener {
             wit.startListening();
             return true;
         } catch (Throwable e) {
+            e.printStackTrace();
             return false;
         }
     }
@@ -63,6 +65,7 @@ public class TiwitModule extends KrollModule implements IWitListener {
             wit.stopListening();
             return true;
         } catch (Throwable e) {
+            e.printStackTrace();
             return false;
         }
     }

@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+architectures: armeabi armeabi-v7a x86
+description: Module to expose wrapper for Wit.ai voice SDK
+author: Louis Quaintance
+license: MIT
+copyright: Louis Quaintance APS
+
+# these should not be edited
+name: tiwit
+moduleid: com.tiwit
+guid: b0a3eeb5-f13c-4e54-afeb-b158a7083b99
+platform: android
+minsdk: 5.2.0.GA
