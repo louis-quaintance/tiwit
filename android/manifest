@@ -5,7 +5,7 @@
 version: 1.0.0
 apiversion: 2
 architectures: armeabi armeabi-v7a x86
-description: tiwit
+description: Module to expose wrapper for Wit.ai voice SDK
 author: Louis Quaintance
 license: MIT
 copyright: Louis Quaintance APS
